@@ -9,3 +9,6 @@
 
 ++ HABILITAR EL INICIO DE DOCKER AL INICIAR EL EQUIPO
 --- sudo systemctl enable docker
+
+++ INICIAR EL SERVICIO
+--- sudo systemctl start docker
