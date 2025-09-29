@@ -12,3 +12,6 @@
 
 ++ INICIAR EL SERVICIO
 --- sudo systemctl start docker
+
+++ DETENER EL SERVICIO
+--- sudo systemctl stop docker
