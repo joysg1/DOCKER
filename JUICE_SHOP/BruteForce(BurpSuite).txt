@@ -1,1 +1,5 @@
 ++ URL: https://portswigger.net/burp/communitydownload
+
+++ INSTALAR EL PAQUETE
+--- sudo chmod +x <nombre_paquete>
+--- ./<nombre_paquete>
