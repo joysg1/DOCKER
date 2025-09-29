@@ -1,4 +1,5 @@
 ++ URL: https://github.com/juice-shop/juice-shop
+--- Nota: esta web app se trata de una web app vulnerable destinada a realizar pruebas y prácticas
 
 ++ Ejecutar en terminal lo siguiente para proceder a la instalación:
 --- docker pull bkimminich/juice-shop
