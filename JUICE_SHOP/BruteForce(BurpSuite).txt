@@ -25,6 +25,8 @@
 --- Esperar que el ataque tenga efecto (verificar columna de status, debe ser igual a 200)
 --- El programa procederá a realizar el ataque probando contraseña por contraseña
 --- En la sección de settings podemos agilizar el proceso poniendo un 
-tiempo de 200 (sección pause before retry milliseconds)
+tiempo de 10 (sección pause before retry milliseconds)
+--- En este punto sólo resta esperar que el programa encuentre la contraseña, 
+recordar que el status debe ser 200 
 
 
