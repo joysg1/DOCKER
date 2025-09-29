@@ -3,3 +3,9 @@
 --- cp -rp ./docker /usr/local/bin/ && rm -r ./docker
 --- sudo pacman -U ./docker-desktop-x86_64.pkg.tar.zst
 --- URL para mayor referencia: https://docs.docker.com/desktop/setup/install/linux/archlinux/
+
+++ CONOCER STATUS DEL SERVICIO
+--- systemctl status docker
+
+++ HABILITAR EL INICIO DE DOCKER AL INICIAR EL EQUIPO
+--- sudo systemctl enable docker
