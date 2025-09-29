@@ -3,3 +3,10 @@
 ++ INSTALAR EL PAQUETE
 --- sudo chmod +x <nombre_paquete>
 --- ./<nombre_paquete>
+
+++ USO DEL PROGRAMA
+--- Ir a la sección proxy
+--- Ir a la sección open browser
+--- Copiar el url y pegarlo en el navegador abierto
+---- El url debe ser el url del login: http://localhost:3000/#/login
+
