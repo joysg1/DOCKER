@@ -9,4 +9,22 @@
 --- Ir a la sección open browser
 --- Copiar el url y pegarlo en el navegador abierto
 ---- El url debe ser el url del login: http://localhost:3000/#/login
+--- Presionar forward hasta que se limpie la pantalla del burpsuite
+--- Volver a la página web e ingresar las credenciales de prueba
+---- email: admin@juice-sh.op / password: a
+--- Volver a burpsuite y nos aparecerá el request
+--- Clic derecho en el request
+--- Send to intruder
+--- Ir a la sección de intruder
+--- Ir a la sección de positions
+--- Dar clic en clear
+--- En la sección password dar clic en add y remover la a de allí
+--- Ir a la sección de payloads
+--- Ir a la sección de la derecha y el Load cargar el archivo de las contraseñas
+--- Clic en start attack
+--- Esperar que el ataque tenga efecto (verificar columna de status, debe ser igual a 200)
+--- El programa procederá a realizar el ataque probando contraseña por contraseña
+--- En la sección de settings podemos agilizar el proceso poniendo un 
+tiempo de 200 (sección pause before retry milliseconds)
+
 
