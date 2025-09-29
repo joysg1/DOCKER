@@ -46,6 +46,8 @@ obtener el acceso usando cualquier contraseña
 de teclas Ctrl + Shift + i
 --- El objetivo es estando en la página de login ingresar una contraseña (email: admin@juice-sh.op - password: <cualquiera>
 --- Estando en la sección de Network copiar el intento de inicio de sesión (POST Request) como curl
+---- Nota: a la derecha en la sección request nos aparecerán los parámetros asociados a la solicitud, en este caso son dos: email 
+y password
 --- Ir a la terminal de Kali y copiar el texto
 --- Al presionar enter nos indicará: invalid password, no obstante este código nos sirve para automatizar y 
 probar contraseñas
