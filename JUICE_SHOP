@@ -50,4 +50,5 @@ de teclas Ctrl + Shift + i
 y password
 --- Ir a la terminal de Kali y copiar el texto
 --- Al presionar enter nos indicará: invalid password, no obstante este código nos sirve para automatizar y 
-probar contraseñas
+probar contraseñas, hemos incluido el código para realizar tal automatización en python (BruteForce.py)
+
