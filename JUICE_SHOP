@@ -45,7 +45,7 @@ obtener el acceso usando cualquier contraseña
 --- Verificar la sección de network dentro de developer tools en firefox, podemos también entrar usando la combinación
 de teclas Ctrl + Shift + i
 --- El objetivo es estando en la página de login ingresar una contraseña (email: admin@juice-sh.op - password: <cualquiera>
---- Copiar el intento de inicio de sesión (POST Request) como curl
+--- Estando en la sección de Network copiar el intento de inicio de sesión (POST Request) como curl
 --- Ir a la terminal de Kali y copiar el texto
 --- Al presionar enter nos indicará: invalid password, no obstante este código nos sirve para automatizar y 
 probar contraseñas
