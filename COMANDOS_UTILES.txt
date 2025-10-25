@@ -4,6 +4,10 @@
 --- sudo pacman -U ./docker-desktop-x86_64.pkg.tar.zst
 --- URL para mayor referencia: https://docs.docker.com/desktop/setup/install/linux/archlinux/
 
+++ INSTALAR DOCKER (UBUNTU)
+--- sudo snap install docker.io
+--- sudo apt install docker.io -y
+
 ++ CONOCER STATUS DEL SERVICIO
 --- systemctl status docker
 
@@ -15,3 +19,35 @@
 
 ++ DETENER EL SERVICIO
 --- sudo systemctl stop docker
+
+++ BUSCAR IMÁGENES
+--- docker search 
+
+++ DESCARGAR IMÁGEN
+--- docker pull
+
+++ LISTAR CONTENEDORES
+--- sudo docker ps
+--- sudo docker ps -a (lista todos los contenedores, tanto aquellos funcionando como el historial completo)
+
+++ LISTAR IMÁGENES
+--- sudo docker images
+
+++ INICIAR CONTENEDOR
+--- sudo docker run
+
+++ REMOVER CONTENEDOR
+--- sudo docker rm
+
+++ REMOVER IMÁGEN
+-- sudo docker rmi
+
+++ EJECUTAR UN CONTENEDOR
+--- sudo docker exec
+
+++ CREAR UNA NUEVA IMAGEN DESDE UN DOCKER FILE
+--- sudo docker build
+
+
+
+
